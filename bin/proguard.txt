@@ -1,0 +1,30 @@
+# view AndroidManifest.xml #generated:56
+-keep class org.hear2read.Marathi.CheckVoiceData { <init>(...); }
+
+# view AndroidManifest.xml #generated:45
+-keep class org.hear2read.Marathi.DownloadVoiceData { <init>(...); }
+
+# view AndroidManifest.xml #generated:93
+-keep class org.hear2read.Marathi.Flite { <init>(...); }
+
+# view AndroidManifest.xml #generated:84
+-keep class org.hear2read.Marathi.FliteInfoViewer { <init>(...); }
+
+# view AndroidManifest.xml #generated:34
+-keep class org.hear2read.Marathi.FliteManager { <init>(...); }
+
+# view AndroidManifest.xml #generated:20
+-keep class org.hear2read.Marathi.FliteTtsService { <init>(...); }
+
+# view AndroidManifest.xml #generated:66
+-keep class org.hear2read.Marathi.GetSampleText { <init>(...); }
+
+# view AndroidManifest.xml #generated:16
+-keep class org.hear2read.Marathi.Startup { <init>(...); }
+
+# view AndroidManifest.xml #generated:87
+-keep class org.hear2read.Marathi.TTSDemo { <init>(...); }
+
+# view AndroidManifest.xml #generated:106
+-keep class org.hear2read.Marathi.providers.SettingsProvider { <init>(...); }
+
