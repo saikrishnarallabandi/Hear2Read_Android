@@ -64,6 +64,8 @@ LOCAL_MODULE    := ttsflite
 
 LOCAL_CPP_EXTENSION := .cc
 
+# Sai Krishna November 2016
+
 LOCAL_SRC_FILES := org_hear2read_Marathi_service.cc \
 	org_hear2read_Marathi_engine.cc \
 	org_hear2read_Marathi_voices.cc \
