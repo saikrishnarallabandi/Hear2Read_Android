@@ -1,8 +1,8 @@
 ============================
-Hear2Read Text to Speech Tamil Engine for Android
+Hear2Read Text to Speech Marathi Engine for Android
 ============================
 
-:Authors: Alok Parlikar, Andrew Wilkinson
+:Authors: Alok Parlikar, Andrew Wilkinson, 
 
 Introduction
 ============
@@ -16,7 +16,7 @@ similar devices. For more information about Flite, visit http://www.cmuflite.org
 This application wraps the Flite engine so that it can be installed as
 an application on Android devices. This app gets installed as a TTS
 library, thereby allowing other applications to make use of Flite for
-Tamil language synthesis.  Specifically, this app has been tested with
+Marathi language synthesis.  Specifically, this app has been tested with
 @Voice Aloud Reader, Voice Dream Reader, GoRead, and Talkback on Android 5.1 (Lollipop).
 
 This application has been developed with support from Hear2Read and
@@ -28,9 +28,7 @@ For information about Hear2Read, visit http://www.hear2read.org/.
 Installing this Application
 ===========================
 
-This app is available on the Google Play Store at
-https://play.google.com/store/apps/details?id=org.hear2read.Tamil&hl=en.
-Alternatively, using this source code, you can generate an .apk file and install it on
+You can generate an .apk file using this source code and install it on
 your device.  Devices running Android versions 2.2 (Froyo) or later are
 supported.
 
@@ -41,8 +39,8 @@ storage under the directory "hear2read-data."  Next:
 On Android 5.1:
 
 1.  Enter "Settings" → "Language & Input" → "Text-to-speech output"
-2.  Select Hear2Read Tamil under "Preferred engine"
-3.  Tap the gear icon next to "Hear2Read Tamil" and specify "Language" as "Tamil (India,female;sxv)"
+2.  Select Hear2Read Marathi under "Preferred engine"
+3.  Tap the gear icon next to "Hear2Read Marathi" and specify "Language" as "Tamil (India,female;sxv)"
 4.  Select the speech rate, if desired, under "Speech rate"
 
 You can tap "Listen to an example" to verify that the engine is working.
