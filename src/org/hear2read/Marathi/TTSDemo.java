@@ -152,6 +152,7 @@ public class TTSDemo extends ListActivity implements OnClickListener, OnKeyListe
 		mStrings.add(" त्यानंतर शहरात तणाव निर्माण झाला. ");
 		mStrings.add("आगामी काळात यामध्ये आणखी काही प्रणाली सादर करण्याची कंपनीची योजना आहे.");
 		mStrings.add("प्रत्यक्षात ते मागे घेतले नाही.");
+		mStrings.add("This is a bilingual voice");
 
 				mAdapter = new InputHistoryAdapter(this, R.layout.list_tts_history, mStrings);
 
