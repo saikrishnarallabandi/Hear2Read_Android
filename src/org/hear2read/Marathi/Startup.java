@@ -54,21 +54,28 @@ public class Startup extends Application {
         try {
             files = assetManager.list("");
             for (int i = 0; i < files.length; i++) {
+                //Toast toast = Toast.makeText(mContext, files[i], Toast.LENGTH_SHORT);
+                //toast.show();
                 Log.e("file:", files[i]);
             }
         } catch (IOException e) {
             Log.e("tag", "Failed to get asset file list.", e);
         }
         if (files != null) for (String filename : files) {
+
             if (filename.equals(assetFileName)) {
                 InputStream in = null;
                 OutputStream out = null;
                 try {
+                 //Toast toast = Toast.makeText(mContext, filename, Toast.LENGTH_LONG);
+                 //   toast.show();
                     in = assetManager.open(filename);
                     File outFile = new File(outFilePath, filename);
                     out = new FileOutputStream(outFile);
                     copyFile(in, out);
                 } catch (IOException e) {
+                    Toast toast = Toast.makeText(mContext, "d", Toast.LENGTH_LONG);
+                    toast.show();
                     Log.e("tag", "Failed to copy asset file: " + filename, e);
                 } finally {
                     if (in != null) {
@@ -101,7 +108,7 @@ public class Startup extends Application {
 
         //  Hardcoding this, for now, for simplicity.  Just match to whatever's in the
         //  assets directory.
-        String VOX_NAME = "male;aup.cg.flitevox";
+        String VOX_NAME = "male.aup.cg.flitevox";
 
         String FLITE_DATA_PATH = Voice.getDataStorageBasePath();
 
@@ -114,16 +121,17 @@ public class Startup extends Application {
 
         // Copy the voices list, whether or not there's one already in phone storage
         new File(FLITE_DATA_PATH + "cg/").mkdirs();
-        copyAssets("voices_tamil.list", FLITE_DATA_PATH + "/cg");
-        String VOICE_LIST_FILE = FLITE_DATA_PATH + "cg/voices_tamil.list";
+        copyAssets("voices_marathi.list", FLITE_DATA_PATH + "/cg");
+        //copyAssets("male.aup.cg.flitevox", FLITE_DATA_PATH + "/cg");
+        String VOICE_LIST_FILE = FLITE_DATA_PATH + "cg/voices_marathi.list";
 
-        if (!Utility.pathExists(FLITE_DATA_PATH + "cg/tam/IND/" + VOX_NAME)) {
-            new File(FLITE_DATA_PATH + "cg/tam/IND/").mkdirs();
+        if (!Utility.pathExists(FLITE_DATA_PATH + "cg/mar/IND/" + VOX_NAME)) {
+            new File(FLITE_DATA_PATH + "cg/mar/IND/").mkdirs();
             Toast toast = Toast.makeText(mContext, "Installing Marathi Voice:\n " +
                     VOX_NAME, Toast.LENGTH_LONG);
             toast.show();
-            copyAssets(VOX_NAME, FLITE_DATA_PATH + "/cg/tam/IND/");
-            toast = Toast.makeText(mContext, "Marathi Voice Is Ready.", Toast.LENGTH_LONG);
+            copyAssets(VOX_NAME, FLITE_DATA_PATH + "/cg/mar/IND/");
+            toast = Toast.makeText(mContext, "Marathi Voice is Ready.", Toast.LENGTH_LONG);
             toast.show();
 
         } else {
@@ -174,7 +182,7 @@ public class Startup extends Application {
             }
 
 
-            String mVoicePath = FLITE_DATA_PATH + "cg/tam/IND/" + VOX_NAME;
+            String mVoicePath = FLITE_DATA_PATH + "cg/mar/IND/" + VOX_NAME;
 
             FileInputStream fis;
             try {
@@ -216,7 +224,7 @@ public class Startup extends Application {
                 Toast toast = Toast.makeText(mContext, "Installing New Marathi Voice:\n " +
                         VOX_NAME, Toast.LENGTH_LONG);
                 toast.show();
-                copyAssets(VOX_NAME, FLITE_DATA_PATH + "/cg/tam/IND/");
+                copyAssets(VOX_NAME, FLITE_DATA_PATH + "/cg/mar/IND/");
                 toast = Toast.makeText(mContext, "New Marathi Voice Is Ready", Toast.LENGTH_LONG);
                 toast.show();
                 returnData.putStringArrayListExtra("availableVoices", available);
@@ -236,6 +244,8 @@ public class Startup extends Application {
         ArrayList<String> voiceList = null;
         try {
             voiceList = Utility.readLines(VOICE_LIST_FILE);
+            //toast = Toast.makeText(mContext, voiceList, Toast.LENGTH_LONG);
+            //    toast.show();
         } catch (IOException e) {
             // Ignore exception, since we will return empty anyway.
         }

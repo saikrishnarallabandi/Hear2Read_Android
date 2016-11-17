@@ -52,6 +52,8 @@ import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
 import android.widget.Toast;
+import android.content.Context;
+
 
 /* Checks if the voice data is installed
  * for flite
@@ -61,7 +63,8 @@ public class CheckVoiceData extends Activity {
 	private final static String LOG_TAG = "Flite_Java_" + CheckVoiceData.class.getSimpleName();
 	private final static String FLITE_DATA_PATH = Voice.
 			getDataStorageBasePath();
-	public final static String VOICE_LIST_FILE = FLITE_DATA_PATH+"cg/voices_tamil.list";
+	public final static String VOICE_LIST_FILE = FLITE_DATA_PATH+"cg/voices_marathi.list";
+    private static Context mContext;
 
 
 	@Override
@@ -116,8 +119,8 @@ public class CheckVoiceData extends Activity {
 
 			// Copy the voices list, whether or not there's one already in phone storage
 			new File(FLITE_DATA_PATH + "cg/").mkdirs();
-			copyAssets("voices_tamil.list", FLITE_DATA_PATH + "/cg");
-			String VOICE_LIST_FILE = FLITE_DATA_PATH + "cg/voices_tamil.list";
+			copyAssets("voices_marathi.list", FLITE_DATA_PATH + "/cg");
+			String VOICE_LIST_FILE = FLITE_DATA_PATH + "cg/voices_marathi.list";
 
 		}
 
@@ -176,15 +179,15 @@ public class CheckVoiceData extends Activity {
 //
 //		String[] assets = null;
 
-		String VOX_NAME = "male;aup.cg.flitevox";
+		String VOX_NAME = "male.aup.cg.flitevox";
 
 		//if (!Utility.pathExists(FLITE_DATA_PATH + "cg/tam/IND/" + VOX_NAME)) {
-			new File(FLITE_DATA_PATH + "cg/tam/IND/").mkdirs();
+			new File(FLITE_DATA_PATH + "cg/mar/IND/").mkdirs();
 			//Toast toast = Toast.makeText(mContext, "Installing Tamil Voice:\n " +
 			//		VOX_NAME, Toast.LENGTH_LONG);
 			//toast.show();
 			CheckVoiceData cvd = new CheckVoiceData();
-			cvd.copyAssets(VOX_NAME, FLITE_DATA_PATH + "/cg/tam/IND/");
+			cvd.copyAssets(VOX_NAME, FLITE_DATA_PATH + "/cg/mar/IND/");
 			//toast = Toast.makeText(mContext, "Tamil Voice Is Ready.", Toast.LENGTH_LONG);
 			//toast.show();
 
@@ -207,6 +210,8 @@ public class CheckVoiceData extends Activity {
 		ArrayList<String> voiceList = null;
 		try {
 			voiceList = Utility.readLines(VOICE_LIST_FILE);
+			//Toast toast = Toast.makeText(mContext,  voiceList[0], Toast.LENGTH_LONG);
+            //toast.show();
 		} catch (IOException e) {
 			// Ignore exception, since we will return empty anyway.
 		}
@@ -217,6 +222,9 @@ public class CheckVoiceData extends Activity {
 		ArrayList<Voice> voices = new ArrayList<Voice>();
 
 		for(String strLine:voiceList) {
+			//Toast toast = Toast.makeText(mContext, strLine, Toast.LENGTH_LONG);
+			//toast.show();
+
 			Voice vox = new Voice(strLine);
 			if (!vox.isValid())
 				continue;

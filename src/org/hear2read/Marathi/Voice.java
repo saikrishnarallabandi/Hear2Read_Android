@@ -45,6 +45,8 @@ import java.util.Locale;
 
 import android.os.Environment;
 import android.util.Log;
+import android.widget.Toast;
+import android.content.Context;
 
 public class Voice {
 	private final static String LOG_TAG = "Flite_Java_" + Voice.class.getSimpleName();
@@ -69,6 +71,8 @@ public class Voice {
 	private boolean mIsValidVoice;
 	private String mVoicePath;
 	private boolean mIsVoiceAvailable;
+    private static Context mContext;
+
 
 	/**
 	 * @return absolute path to the hear2read-data directory
@@ -113,6 +117,9 @@ public class Voice {
 		}
 
 		if (parseSuccessful) {
+
+			//Toast toast = Toast.makeText(mContext, "Parse succeeded", Toast.LENGTH_SHORT);
+            //toast.show();
 			mIsValidVoice = true;
 			mVoicePath = getDataStorageBasePath() + "cg/" + mVoiceLanguage +
 					"/" + mVoiceCountry + "/" + mVoiceVariant + ".cg.flitevox";
@@ -120,6 +127,7 @@ public class Voice {
 		}
 		else {
 			mIsValidVoice = false;
+
 		}
 
 	}

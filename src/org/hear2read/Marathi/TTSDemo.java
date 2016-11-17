@@ -61,6 +61,8 @@ import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
+
 
 public class TTSDemo extends ListActivity implements OnClickListener, OnKeyListener, OnInitListener {
 	private final static String LOG_TAG = "Flite_Java_" + TTSDemo.class.getSimpleName();
@@ -77,6 +79,8 @@ public class TTSDemo extends ListActivity implements OnClickListener, OnKeyListe
     private Spinner mRateSpinner;
 	private TextToSpeech mTts;
 	private int mSelectedVoice;
+	private static Context mContext;
+
 
 	@TargetApi(17)
 	@Override
@@ -92,6 +96,8 @@ public class TTSDemo extends ListActivity implements OnClickListener, OnKeyListe
 				mVoices.add(vox);
 			}
 		}
+    	//Toast toast = Toast.makeText(mContext, , Toast.LENGTH_LONG);
+        //toast.show();
 
 		if (mVoices.isEmpty()) {
 			// We can't demo anything if there are no voices installed.
