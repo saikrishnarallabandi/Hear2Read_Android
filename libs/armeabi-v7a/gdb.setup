@@ -1,2 +1,0 @@
-set solib-search-path ./obj/local/armeabi-v7a
-directory /home/saikrishnalticmu/tools/android-ndk/platforms/android-16/arch-arm/usr/include /home/saikrishnalticmu/tools/android-ndk/sources/cxx-stl/system /home/saikrishnalticmu/tools/Festival/builds/flite/include /home/saikrishnalticmu/tools/android-ndk/sources/cxx-stl/system/include jni
