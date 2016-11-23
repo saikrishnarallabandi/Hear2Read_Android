@@ -66,9 +66,9 @@ LOCAL_CPP_EXTENSION := .cc
 
 # Sai Krishna November 2016
 
-LOCAL_SRC_FILES := org_hear2read_Marathi_service.cc \
-	org_hear2read_Marathi_engine.cc \
-	org_hear2read_Marathi_voices.cc \
+LOCAL_SRC_FILES := org_hear2read_Kannada_service.cc \
+	org_hear2read_Kannada_engine.cc \
+	org_hear2read_Kannada_voices.cc \
 	org_hear2read_string.cc
 
 LOCAL_C_INCLUDES := $(FLITEDIR)/include

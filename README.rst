@@ -1,5 +1,5 @@
 ============================
-Hear2Read Text to Speech Marathi Engine for Android
+Hear2Read Text to Speech Kannada Engine for Android
 ============================
 
 :Authors: Alok Parlikar, Andrew Wilkinson, 
@@ -16,7 +16,7 @@ similar devices. For more information about Flite, visit http://www.cmuflite.org
 This application wraps the Flite engine so that it can be installed as
 an application on Android devices. This app gets installed as a TTS
 library, thereby allowing other applications to make use of Flite for
-Marathi language synthesis.  Specifically, this app has been tested with
+Kannada language synthesis.  Specifically, this app has been tested with
 @Voice Aloud Reader, Voice Dream Reader, GoRead, and Talkback on Android 5.1 (Lollipop).
 
 This application has been developed with support from Hear2Read and
@@ -39,8 +39,8 @@ storage under the directory "hear2read-data."  Next:
 On Android 5.1:
 
 1.  Enter "Settings" → "Language & Input" → "Text-to-speech output"
-2.  Select Hear2Read Marathi under "Preferred engine"
-3.  Tap the gear icon next to "Hear2Read Marathi" and specify "Language" as "Tamil (India,female;sxv)"
+2.  Select Hear2Read Kannada under "Preferred engine"
+3.  Tap the gear icon next to "Hear2Read Kannada" and specify "Language" as "Kannada (India,female.pal)"
 4.  Select the speech rate, if desired, under "Speech rate"
 
 You can tap "Listen to an example" to verify that the engine is working.

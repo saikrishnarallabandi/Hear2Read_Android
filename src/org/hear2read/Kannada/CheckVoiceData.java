@@ -61,7 +61,7 @@ public class CheckVoiceData extends Activity {
 	private final static String LOG_TAG = "Flite_Java_" + CheckVoiceData.class.getSimpleName();
 	private final static String FLITE_DATA_PATH = Voice.
 			getDataStorageBasePath();
-	public final static String VOICE_LIST_FILE = FLITE_DATA_PATH+"cg/voices_tamil.list";
+	public final static String VOICE_LIST_FILE = FLITE_DATA_PATH+"cg/voices_kannada.list";
 
 
 	@Override
@@ -116,8 +116,8 @@ public class CheckVoiceData extends Activity {
 
 			// Copy the voices list, whether or not there's one already in phone storage
 			new File(FLITE_DATA_PATH + "cg/").mkdirs();
-			copyAssets("voices_tamil.list", FLITE_DATA_PATH + "/cg");
-			String VOICE_LIST_FILE = FLITE_DATA_PATH + "cg/voices_tamil.list";
+			copyAssets("voices_kannada.list", FLITE_DATA_PATH + "/cg");
+			String VOICE_LIST_FILE = FLITE_DATA_PATH + "cg/voices_kannada.list";
 
 		}
 
@@ -176,15 +176,15 @@ public class CheckVoiceData extends Activity {
 //
 //		String[] assets = null;
 
-		String VOX_NAME = "female;sxv.cg.flitevox";
+		String VOX_NAME = "female.pal.cg.flitevox";
 
 		//if (!Utility.pathExists(FLITE_DATA_PATH + "cg/tam/IND/" + VOX_NAME)) {
-			new File(FLITE_DATA_PATH + "cg/tam/IND/").mkdirs();
+			new File(FLITE_DATA_PATH + "cg/kan/IND/").mkdirs();
 			//Toast toast = Toast.makeText(mContext, "Installing Tamil Voice:\n " +
 			//		VOX_NAME, Toast.LENGTH_LONG);
 			//toast.show();
 			CheckVoiceData cvd = new CheckVoiceData();
-			cvd.copyAssets(VOX_NAME, FLITE_DATA_PATH + "/cg/tam/IND/");
+			cvd.copyAssets(VOX_NAME, FLITE_DATA_PATH + "/cg/kan/IND/");
 			//toast = Toast.makeText(mContext, "Tamil Voice Is Ready.", Toast.LENGTH_LONG);
 			//toast.show();
 

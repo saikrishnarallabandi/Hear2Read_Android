@@ -101,7 +101,7 @@ public class Startup extends Application {
 
         //  Hardcoding this, for now, for simplicity.  Just match to whatever's in the
         //  assets directory.
-        String VOX_NAME = "female;sxv.cg.flitevox";
+        String VOX_NAME = "female.pal.cg.flitevox";
 
         String FLITE_DATA_PATH = Voice.getDataStorageBasePath();
 
@@ -114,15 +114,15 @@ public class Startup extends Application {
 
         // Copy the voices list, whether or not there's one already in phone storage
         new File(FLITE_DATA_PATH + "cg/").mkdirs();
-        copyAssets("voices_tamil.list", FLITE_DATA_PATH + "/cg");
-        String VOICE_LIST_FILE = FLITE_DATA_PATH + "cg/voices_tamil.list";
+        copyAssets("voices_kannada.list", FLITE_DATA_PATH + "/cg");
+        String VOICE_LIST_FILE = FLITE_DATA_PATH + "cg/voices_kannada.list";
 
-        if (!Utility.pathExists(FLITE_DATA_PATH + "cg/tam/IND/" + VOX_NAME)) {
-            new File(FLITE_DATA_PATH + "cg/tam/IND/").mkdirs();
+        if (!Utility.pathExists(FLITE_DATA_PATH + "cg/Kan/IND/" + VOX_NAME)) {
+            new File(FLITE_DATA_PATH + "cg/kan/IND/").mkdirs();
             Toast toast = Toast.makeText(mContext, "Installing Kannada Voice:\n " +
                     VOX_NAME, Toast.LENGTH_LONG);
             toast.show();
-            copyAssets(VOX_NAME, FLITE_DATA_PATH + "/cg/tam/IND/");
+            copyAssets(VOX_NAME, FLITE_DATA_PATH + "/cg/kan/IND/");
             toast = Toast.makeText(mContext, "Kannada Voice Is Ready.", Toast.LENGTH_LONG);
             toast.show();
 
@@ -174,7 +174,7 @@ public class Startup extends Application {
             }
 
 
-            String mVoicePath = FLITE_DATA_PATH + "cg/tam/IND/" + VOX_NAME;
+            String mVoicePath = FLITE_DATA_PATH + "cg/kan/IND/" + VOX_NAME;
 
             FileInputStream fis;
             try {
@@ -216,7 +216,7 @@ public class Startup extends Application {
                 Toast toast = Toast.makeText(mContext, "Installing New Kannada Voice:\n " +
                         VOX_NAME, Toast.LENGTH_LONG);
                 toast.show();
-                copyAssets(VOX_NAME, FLITE_DATA_PATH + "/cg/tam/IND/");
+                copyAssets(VOX_NAME, FLITE_DATA_PATH + "/cg/kan/IND/");
                 toast = Toast.makeText(mContext, "New Kannada Voice Is Ready", Toast.LENGTH_LONG);
                 toast.show();
                 returnData.putStringArrayListExtra("availableVoices", available);
