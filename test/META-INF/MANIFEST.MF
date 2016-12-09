@@ -1,0 +1,147 @@
+Manifest-Version: 1.0
+Created-By: 1.8.0_111 (Oracle Corporation)
+
+Name: res/drawable-ldpi-v4/ic_action_download.png
+SHA1-Digest: yQKRfPbKYGwUitX8UmuIk8gm6+E=
+
+Name: res/layout/activity_tts_demo.xml
+SHA1-Digest: ffjG95y8cEFNdsZeqjBNMVmmGx0=
+
+Name: AndroidManifest.xml
+SHA1-Digest: TYAeF5c4c+1a71pZtG3gnmk45v0=
+
+Name: res/drawable-hdpi-v4/ic_launcher_app_logo.png
+SHA1-Digest: SWBJfun6zCBJ7N/Sv9BO4EiGC2E=
+
+Name: res/drawable-mdpi-v4/custom_dialog_manage.png
+SHA1-Digest: R54hsElrpQYKrX7FC/7bBSzcrws=
+
+Name: res/drawable-ldpi-v4/ic_launcher_app_logo.png
+SHA1-Digest: KvJ5wlySegH3Id4rH/bxTZv0aqI=
+
+Name: res/drawable-hdpi-v4/ic_action_send.png
+SHA1-Digest: sSCRnBgMFtB0A29Rk3A9Gz6dkdY=
+
+Name: assets/voices_marathi.list
+SHA1-Digest: VzZyXpxySX0Ds7tow8d9U7zdtYo=
+
+Name: res/xml/tts_engine.xml
+SHA1-Digest: 69oQwLQsCUuXtoYJ/GOBeW/RPUo=
+
+Name: res/drawable-hdpi-v4/ic_action_download.png
+SHA1-Digest: PbCP4/cYN9q2cZzWjRa/+4XkQ9o=
+
+Name: res/drawable-xhdpi-v4/custom_dialog_manage.png
+SHA1-Digest: yHtrKHAl+H2zW1hgUTgp6mnrjgc=
+
+Name: assets/t.wav
+SHA1-Digest: GFZbsZq1o9K65KdozQ4D/57nr20=
+
+Name: res/drawable/dashboard_button_background.xml
+SHA1-Digest: 6QbQ0MeHhxekPSN31VyDYHKdUbs=
+
+Name: lib/armeabi/libttsflite.so
+SHA1-Digest: GhRu0mxUM2wkpDfphogX1RbnFKw=
+
+Name: res/drawable-xhdpi-v4/ic_action_send.png
+SHA1-Digest: 9TwlLcknnhEeC8uSE9Ng/35Dn6o=
+
+Name: lib/x86/libttsflite.so
+SHA1-Digest: r7xKcm7frT9inWeLiK14hSNsU9M=
+
+Name: res/drawable-ldpi-v4/custom_dialog_manage.png
+SHA1-Digest: DAmHergQDNHy4aeQfz/R/vKfVSQ=
+
+Name: res/drawable-xhdpi-v4/ic_launcher_app_logo.png
+SHA1-Digest: IeQ4hVclSUxZAbX3SqVtqNdELhs=
+
+Name: res/drawable-ldpi-v4/custom_dialog_info.png
+SHA1-Digest: 6nTMk6lvWw83W9N6FcIkM0Yap88=
+
+Name: res/drawable-ldpi-v4/ic_action_send.png
+SHA1-Digest: +IQbEywKvIDsJuSFyRhagmiROHQ=
+
+Name: res/drawable-xhdpi-v4/custom_dialog_tts.png
+SHA1-Digest: PWwrYewZlVVpN51mYk56mrY2Hlw=
+
+Name: res/drawable-hdpi-v4/ic_action_delete.png
+SHA1-Digest: w0+9FhhdzQUUFCNu0ZSvXYZ44cA=
+
+Name: res/drawable/border_ui.xml
+SHA1-Digest: P4zNLiXW1+0MzOi1MTf+iTrzHEc=
+
+Name: res/drawable-mdpi-v4/ic_action_send.png
+SHA1-Digest: Nfu5Vd0lHUsq78zv0xEnXCgD7eg=
+
+Name: res/drawable-xhdpi-v4/ic_action_delete.png
+SHA1-Digest: Zt8HB7Ka3egDy0RhbNFdtf6c29U=
+
+Name: res/layout/flite_info.xml
+SHA1-Digest: MkFTBbSTVKY7xcEa3tYndWHn68E=
+
+Name: res/drawable-hdpi-v4/custom_dialog_tts.png
+SHA1-Digest: ZtK3ETFSE9Fs7/0w0fMfwpTTTPs=
+
+Name: res/drawable-ldpi-v4/ic_action_delete.png
+SHA1-Digest: eJ9Q+0BtHrqsy94X0Fuk+mc5qzA=
+
+Name: res/drawable-mdpi-v4/custom_dialog_info.png
+SHA1-Digest: +38+xxEGD1v5Rd3+tpJUIN/97N0=
+
+Name: assets/male.aup.cg.flitevox
+SHA1-Digest: 96AtSd9iHxCb1wyWGjGVXePRP7U=
+
+Name: res/drawable-xhdpi-v4/ic_action_download.png
+SHA1-Digest: Pr4kR3nG3DN3JYBLdIlPpCrKzeQ=
+
+Name: res/drawable-hdpi-v4/custom_dialog_info.png
+SHA1-Digest: uRmHU1E4Vb0hwUmF5Tqpva92mxU=
+
+Name: res/drawable-xhdpi-v4/custom_dialog_info.png
+SHA1-Digest: oHMMpDk7MzKdFTSVYxMyzGDfKfY=
+
+Name: res/drawable-hdpi-v4/custom_dialog_manage.png
+SHA1-Digest: fxiInP74A/bnwTbNfnMABSp0k3Q=
+
+Name: res/drawable-mdpi-v4/custom_dialog_tts.png
+SHA1-Digest: +Yj6T7AvGS0CYakMIvCt8S75zKs=
+
+Name: res/drawable-mdpi-v4/ic_action_delete.png
+SHA1-Digest: qEH6mhNDpVLXVgigb1MZFb8GwvE=
+
+Name: res/drawable-mdpi-v4/ic_action_download.png
+SHA1-Digest: MGi9Wd2jHFu6d++hXJtPM9/D6xo=
+
+Name: res/layout/dashboard_icon.xml
+SHA1-Digest: d39IAqsvjSXfL44sVBHrt9ZKZfM=
+
+Name: lib/mips/libttsflite.so
+SHA1-Digest: SY5/8Gddmm5OiGm/pdJE6zndHTw=
+
+Name: res/drawable-mdpi-v4/ic_launcher_app_logo.png
+SHA1-Digest: +oZNjAKbtGJ5oDnjdPmqnz1SlQs=
+
+Name: res/drawable/voice_imagebutton_background.xml
+SHA1-Digest: mcKo76mP0eH2sB6L7GLUtfVu0Sg=
+
+Name: lib/armeabi-v7a/libttsflite.so
+SHA1-Digest: WIvfMud9GQFfNmjWP/zny22Ycf4=
+
+Name: res/layout/flitemanager.xml
+SHA1-Digest: JTD+nCKau6QpJmwu0nWrrVRrBw8=
+
+Name: resources.arsc
+SHA1-Digest: p8wd8MYVCqELbjQRUzXp0C0+e4w=
+
+Name: classes.dex
+SHA1-Digest: 17+f68N4BMS+Rb6IZkLKlxfNhSY=
+
+Name: res/layout/list_tts_history.xml
+SHA1-Digest: 0HJ3tfzhUamNaqg+4aTEI428FzU=
+
+Name: res/drawable-ldpi-v4/custom_dialog_tts.png
+SHA1-Digest: gIUVvYOjPXiJ9E0LvrJipJTgatU=
+
+Name: res/layout/view_voice_manager.xml
+SHA1-Digest: 0RxeExU9xwXD8sRHLsdcRtQMUWE=
+
