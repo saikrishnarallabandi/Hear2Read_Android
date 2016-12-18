@@ -148,12 +148,12 @@ public class TTSDemo extends ListActivity implements OnClickListener, OnKeyListe
 
 
 		setContentView(R.layout.activity_tts_demo);
-		mStrings.add("केंद्रीय निवडणूक आयोगाने 16 सप्टेंबर 2016 रोजी प्रसिद्ध केलेल्या प्रारूप मतदार यादीचे विभाजन 15 डिसेंबर 2016 पर्यंत करण्यात येईल.");
-		mStrings.add("राज्यातील दहा महानगरपालिका आणि 26 जिल्हा परिषदा व 296 पंचायत समित्यांच्या सार्वत्रिक निवडणुकांसाठी तयार करण्यात");
-		mStrings.add("नवीन मतदार नोंदणीसाठी निवडणूक आयोगाने 1 जानेवारी 2017 या अर्हता दिनांकानुसार 16 सप्टेंबर ते 21 ऑक्‍टोबर 2016 या कालावधीत नवीन मतदार नोंदणी;");
-		mStrings.add("प्रत्यक्षात ते मागे घेतले नाही.");
+		mStrings.add(" हीयर टू रीड ओपन सोर्स सॉफ्टवेअर वापरल्याबद्दल धन्यवाद  ");
+		mStrings.add("निर्मितीकार: हीयर टू रीड स्वयंसेवक आणि कार्नेगी मेलन युनिव्हर्सिटी ");
+		mStrings.add("यात सुधारणा करण्यासाठीच्या सूचना जरूर पाठवा ");
+		mStrings.add("तुमच्या सूचना प्ले स्टोरवर रेटिंग आणि अभिप्राय भागातून पाठवा");
 
-				mAdapter = new InputHistoryAdapter(this, R.layout.list_tts_history, mStrings);
+		mAdapter = new InputHistoryAdapter(this, R.layout.list_tts_history, mStrings);
 
 		setListAdapter(mAdapter);
 

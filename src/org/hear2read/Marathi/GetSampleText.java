@@ -65,7 +65,7 @@ public class GetSampleText extends Activity {
       returnData.putExtra("sampleText", getString(R.string.eng_sample));
       Log.v(LOG_TAG, "Returned SampleText: " + getString(R.string.eng_sample));
 
-    } else if  (language.equals("tam")) {
+    } else if  (language.equals("mar")) {
       returnData.putExtra("sampleText", getString(R.string.indic_sample));
       Log.v(LOG_TAG, "Returned SampleText: " + getString(R.string.indic_sample));
 
