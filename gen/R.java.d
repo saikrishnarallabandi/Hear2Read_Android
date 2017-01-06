@@ -1,4 +1,4 @@
-/home/saikrishnalticmu/hacks/repos/Hear2Read_Android/gen/org/hear2read/Marathi/R.java \
+/home/saikrishnalticmu/hacks/repos/Hear2Read_Android/gen/org/hear2read/Telugu/R.java \
  : /home/saikrishnalticmu/hacks/repos/Hear2Read_Android/res/values-land/styles.xml \
 /home/saikrishnalticmu/hacks/repos/Hear2Read_Android/res/drawable-mdpi/custom_dialog_info.png \
 /home/saikrishnalticmu/hacks/repos/Hear2Read_Android/res/drawable-mdpi/custom_dialog_tts.png \

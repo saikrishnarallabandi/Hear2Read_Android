@@ -69,7 +69,6 @@
 /home/saikrishnalticmu/hacks/repos/Hear2Read_Android/bin/res/drawable-xhdpi/ic_action_send.png \
 /home/saikrishnalticmu/hacks/repos/Hear2Read_Android/bin/res/drawable-xhdpi/ic_action_delete.png \
 /home/saikrishnalticmu/hacks/repos/Hear2Read_Android/bin/res/drawable-xhdpi/ic_action_download.png \
-/home/saikrishnalticmu/hacks/repos/Hear2Read_Android/assets/t.wav \
-/home/saikrishnalticmu/hacks/repos/Hear2Read_Android/assets/voices_marathi.list \
-/home/saikrishnalticmu/hacks/repos/Hear2Read_Android/assets/male.aup.cg.flitevox \
+/home/saikrishnalticmu/hacks/repos/Hear2Read_Android/assets/voices_telugu.list \
+/home/saikrishnalticmu/hacks/repos/Hear2Read_Android/assets/male.rsk.cg.flitevox \
 /home/saikrishnalticmu/hacks/repos/Hear2Read_Android/bin/AndroidManifest.xml \
