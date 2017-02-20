@@ -148,10 +148,10 @@ public class TTSDemo extends ListActivity implements OnClickListener, OnKeyListe
 
 
 		setContentView(R.layout.activity_tts_demo);
-		mStrings.add(" ఈ ఊరు విజయవాడకు చాల దగ్గర  ");
-		mStrings.add(" ఆ ఆలయం ప్రధాన ఆకర్షణ ");
-		mStrings.add(" నాగేశ్వర రావు  ");
-		mStrings.add(" ఘనత సాధించారు ");
+		mStrings.add(" హియర్ టు రీడ్ ఓపెన్ సోర్స్ సాఫ్ట్ వేర్ వాడుతున్నందుకు ధన్యవాదములు.  ");
+		mStrings.add(" ఇది   హియర్ టు రీడ్   వాలంటీర్స్  మరియు  కార్నెగీ మెల్లోన్ విశ్వ విద్యాలయం  ద్వారా తయారు చేయబడింది. ");
+		mStrings.add(" అభివృద్ధి దిశగా మీ అభిప్రాయాలు తెలియజేయండి. ");
+		mStrings.add(" మీ సలహాలు మరియు సూచనలు ప్లే స్టోర్ రేటింగ్స్ మరియు రివ్యూస్ ద్వారా తెలియచేయగలరు.  ");
 
 		mAdapter = new InputHistoryAdapter(this, R.layout.list_tts_history, mStrings);
 
