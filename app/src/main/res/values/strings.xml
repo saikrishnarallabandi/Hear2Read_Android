@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gujarati Hear2Read</string>
+    <string name="eng_sample">This is a sample English sentence for the Hear2Read synthesizer.</string>
+    <string name="indic_sample">ગુજરાતી લેખનને વાણીમાં કઈ રીતે ફેરવી શકાય એનો એક નમૂનો અહીં આપ્યો છે.</string>
+    <!--string name="indic_sample">எழுதிய தமிழை உரக்க பேசுவதற்கு இது ஒரு உதாரணம்.</string -->
+    <!--<string name="indic_sample">இதில் எழுதி உள்ளதை பேச்சாக மாற்றும் உதாரணம்.</string>-->
+    <string name="flite_manager">Gujarati Hear2Read</string>
+    <string name="flite_voice_manager">Hear2Read TTS Voice Management</string>
+    <string name="voice_list_update">Download Voice List</string>
+    <string name="voice_demo">Gujarati demo</string>
+    <string name="contact_us">Contact us</string>
+    <string name="about">About</string>
+    <string name="about_app">About Gujarati Hear2Read</string>
+    <string name="menu">Menu</string>
+    <string name="email_client">Select an Email Client</string>
+    <string name="email_subject">Gujarati Hear2Read feedback</string>
+    <string name="hint_text">Copy text and press play, or select one of the sentences below to hear demo…</string>
+</resources>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>--><!--<resources>--><!--<string name="app_name">Flite TTS Engine</string>--><!--<string name="eng_sample">This is a sample English sentence for Flite synthesizer.</string>--><!--<string name="indic_sample">हिंदी भारत की राष्ट्रभाषा है।  मराठी ही महाराष्ट्र राज्याची अधिकृत भाषा आहे.</string>--><!--<string name="flite_manager">Flite</string>--><!--<string name="flite_voice_manager">Flite TTS Voice Management</string>--><!--<string name="voice_list_update">Download Voice List</string>-->
+
+    <!--</resources>-->

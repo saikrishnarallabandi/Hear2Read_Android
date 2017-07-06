@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.hear2read.Gujarati.TTSDemoActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/main_backgroundImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:alpha="0.35"
+            android:scaleType="center"
+            android:src="@drawable/h2r_demo_btn" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:paddingTop="8dip">
+
+                <EditText
+                    android:id="@+id/userText"
+                    android:inputType="textMultiLine"
+                    android:gravity="top|start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/sendButton"
+                    android:hint="@string/hint_text"/>
+
+                <ImageButton
+                    android:id="@+id/sendButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/voice_imagebutton_background"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_action_send"
+                    android:tint="#40C0FF" />
+
+            </RelativeLayout>
+
+            <!--<ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:alpha="0.7"
+                android:src="@drawable/h2r_demo_btn"
+                android:scaleType="fitCenter"
+                android:visibility="visible" />-->
+
+            <ListView
+                android:id="@android:id/list"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center|bottom"
+                android:stackFromBottom="true"
+                android:transcriptMode="normal" />
+            <!-- android:background="@drawable/border_ui" -->
+
+            <!--
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/userText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/sendButton"
+                    android:inputType="textAutoCorrect" />
+
+                <ImageButton
+                    android:id="@+id/sendButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_action_search" />
+
+            </RelativeLayout>
+            -->
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

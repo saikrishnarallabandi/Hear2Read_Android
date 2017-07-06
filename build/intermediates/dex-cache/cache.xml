@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/saikrishnalticmu/.android/build-cache/dc27208826b0cf60b5433e35ed91d95f775df027/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="/home/saikrishnalticmu/Downloads/Hear2Read_compat_debugged/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f0b818d6d01ae626393e08df1fd846e7d79195b4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/saikrishnalticmu/Downloads/Hear2Read_compat_debugged/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="bbfa7b3cbb3f729ada13bf1959189780f9f665cd">
+        <dex dex="/home/saikrishnalticmu/Downloads/Hear2Read_compat_debugged/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_289e8d2d58e56ad02beab2c3b42b712ace41da7b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/saikrishnalticmu/.android/build-cache/dbb20ecb07f55aecc56f1a0b28b27f2da5273073/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/home/saikrishnalticmu/Downloads/Hear2Read_compat_debugged/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ee74550d3e21b402e6bf3bc47e03c2b9c2145125/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/saikrishnalticmu/.android/build-cache/12efb1e46686d69231101ad38bab7f1e0473f854/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/home/saikrishnalticmu/Downloads/Hear2Read_compat_debugged/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_95d6b5892358a270cc2c7d60189dacc9cf667bc7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/saikrishnalticmu/Downloads/Hear2Read_compat_debugged/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/saikrishnalticmu/Downloads/Hear2Read_compat_debugged/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_24b1654bbd74aa37d7d1e332ab5fccbdccc395b1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/saikrishnalticmu/.android/build-cache/2a4ad8a6be7e2073700c2c53cf31866bb91246d9/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="/home/saikrishnalticmu/Downloads/Hear2Read_compat_debugged/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_cef444498cc50e854ab61c294d1e439d218bd999/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/saikrishnalticmu/.android/build-cache/fea202107357a98714a97a5a56813124c0850d07/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/saikrishnalticmu/Downloads/Hear2Read_compat_debugged/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5d1ca4541527a9cfe33c47fabce0699e857f915a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/saikrishnalticmu/.android/build-cache/75656ed32d818c67c74a5c2e32170c5e64d198d4/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="affe29a90a2a709bfd2b8d6411aa99c05a2be96f">
+        <dex dex="/home/saikrishnalticmu/Downloads/Hear2Read_compat_debugged/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_98c764d8860432583be6d0da67ff37bd7270ef86/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/saikrishnalticmu/.android/build-cache/04e8a8693cc6f60c9034001fd06f216cfc911482/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/home/saikrishnalticmu/Downloads/Hear2Read_compat_debugged/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c2b5fd63482cdbedff29046d96ade8254eb83764/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/saikrishnalticmu/.android/build-cache/58160283a8353f2e2ff4c940b1c0652093435df7/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/home/saikrishnalticmu/Downloads/Hear2Read_compat_debugged/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5f8ead78890d100e73efde50c01e3da0d28dfca4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/saikrishnalticmu/.android/build-cache/e253142156a40a154dd0d381efdc73077dc59b17/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="/home/saikrishnalticmu/Downloads/Hear2Read_compat_debugged/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e4f50d052d0e4d6e32f0dfa25997219240f91018/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/saikrishnalticmu/.android/build-cache/1dee1bd3ed5211616fda7fdb656b9d89429e5d48/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/home/saikrishnalticmu/Downloads/Hear2Read_compat_debugged/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2ffc6c26b34eb258bcafa26a492d8121b521f2b2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/saikrishnalticmu/.android/build-cache/8d8cb6d5ce2b75a93f558b148abbbecb8525d566/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/home/saikrishnalticmu/Downloads/Hear2Read_compat_debugged/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e17ae14f898f5fce23bfbe63d6023e40bec2ce85/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/saikrishnalticmu/tools/android-sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/home/saikrishnalticmu/Downloads/Hear2Read_compat_debugged/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.1_11968b8feb2632b280bd7022d40ab9b06e1dcf4b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/saikrishnalticmu/.android/build-cache/b2ae7b2152645bf6b59be3c426b01145b04f300d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/home/saikrishnalticmu/Downloads/Hear2Read_compat_debugged/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2f3062d77264bb999b824b2348aa90521be819fc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/saikrishnalticmu/tools/android-sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.0-alpha4/constraint-layout-solver-1.0.0-alpha4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a882fef6a6b9e3efbb0b6b001895a5fc7c35b391">
+        <dex dex="/home/saikrishnalticmu/Downloads/Hear2Read_compat_debugged/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.0-alpha4_688b4fae723ef7423b9d0f0155dc61f9f4b68247/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/saikrishnalticmu/.android/build-cache/cb2026d1e3b35059ce07561e9e5834eedee2768e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/home/saikrishnalticmu/Downloads/Hear2Read_compat_debugged/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_84204d949fe95d0b7ffaf015e75cc6faa7241609/classes.dex" />
+    </item>
+
+</items>
