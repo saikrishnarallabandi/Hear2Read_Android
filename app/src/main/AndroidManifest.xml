@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.hear2read.telugu"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:icon="@drawable/ic_launcher_app_logo"
+	android:name="org.hear2read.telugu.Startup"
+        android:label="@string/app_name" >
+        <service
+            android:name="org.hear2read.telugu.FliteTtsService"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.TTS_SERVICE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.speech.tts"
+                android:resource="@xml/tts_engine" />
+        </service>
+
+        <activity
+            android:name="org.hear2read.telugu.FliteManager"
+            android:enabled="true"
+            android:label="@string/flite_manager"
+            android:launchMode="standard" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.hear2read.telugu.DownloadVoiceData"
+            android:label="@string/flite_voice_manager"
+            android:theme="@android:style/Theme.Holo" 
+            android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="android.speech.tts.engine.INSTALL_TTS_DATA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.hear2read.telugu.CheckVoiceData"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.speech.tts.engine.CHECK_TTS_DATA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.hear2read.telugu.GetSampleText"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.speech.tts.engine.GET_SAMPLE_TEXT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity-alias
+            android:name=".TtsSettingsActivity"
+            android:targetActivity="org.hear2read.telugu.FliteManager" />
+        <activity-alias
+            android:name=".EngineSettings"
+            android:targetActivity="org.hear2read.telugu.FliteManager" />
+
+        <activity android:name="org.hear2read.telugu.FliteInfoViewer"
+            android:configChanges="keyboardHidden|orientation">
+        </activity>
+        <activity android:name="org.hear2read.telugu.TTSDemo"
+            android:configChanges="keyboardHidden|orientation" >
+        </activity>
+
+        <!-- Legacy Code for pre-ICS compatibility -->
+
+        <activity
+            android:name="org.hear2read.telugu.Flite"
+            android:enabled="true"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.START_TTS_ENGINE" />
+
+                <category android:name="android.intent.category.tts_engine.FLITE" />
+                <category android:name="android.intent.category.tts_lang.eng.USA" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="org.hear2read.telugu.providers.SettingsProvider"
+            android:authorities="org.hear2read.telugu.providers.SettingsProvider" />
+    </application>
+
+    
+
+</manifest>
