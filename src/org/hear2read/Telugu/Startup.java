@@ -122,6 +122,7 @@ public class Startup extends Application {
         // Copy the voices list, whether or not there's one already in phone storage
         new File(FLITE_DATA_PATH + "cg/").mkdirs();
         copyAssets("voices_telugu.list", FLITE_DATA_PATH + "/cg");
+        copyAssets("data", FLITE_DATA_PATH + "/cg");        
         //copyAssets("male.aup.cg.flitevox", FLITE_DATA_PATH + "/cg");
         String VOICE_LIST_FILE = FLITE_DATA_PATH + "cg/voices_telugu.list";
 

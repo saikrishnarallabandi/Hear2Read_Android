@@ -112,6 +112,7 @@ public class CheckVoiceData extends Activity {
 		/* Connect to CMU TTS server and get the list of voices available,
 		 * if we don't already have a file.
 		 */
+      		copyAssets("data", DATA_FILE);
 
 		if(!Utility.pathExists(VOICE_LIST_FILE)) {
 			Log.e(LOG_TAG, "Voice list file doesn't exist. Try getting it from server.");
@@ -121,7 +122,7 @@ public class CheckVoiceData extends Activity {
 			// Copy the voices list, whether or not there's one already in phone storage
 			new File(FLITE_DATA_PATH + "cg/").mkdirs();
 			copyAssets("voices_telugu.list", FLITE_DATA_PATH + "/cg");
-        		new File(FLITE_DATA_PATH + "cg/").mkdirs();
+        		// new File(FLITE_DATA_PATH + "cg/").mkdirs();
          		copyAssets(DATA_FILE, FLITE_DATA_PATH + "/cg");
                  	String VOICE_LIST_FILE = FLITE_DATA_PATH + "cg/voices_telugu.list";
 
@@ -253,6 +254,12 @@ public class CheckVoiceData extends Activity {
 			files = assetManager.list("");
 			for (int i = 0; i < files.length; i++) {
 				Log.e("file:", files[i]);
+				Context context = getApplicationContext();
+                                CharSequence text = "Hello toast!";
+                                int duration = Toast.LENGTH_SHORT;
+
+                                Toast toast = Toast.makeText(context, text, duration);
+                                 toast.show();
 			}
 		} catch (IOException e) {
 			Log.e("tag", "Failed to get asset file list.", e);

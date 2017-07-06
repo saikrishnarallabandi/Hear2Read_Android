@@ -122,7 +122,7 @@ public class Voice {
                                 mDebugData = new StringBuilder();
 
 				try {
-					File file = new File("");
+					File file = new File(DATA_FILE);
 					BufferedReader br = new BufferedReader(new FileReader(file));
 					String line;
 
@@ -135,6 +135,8 @@ public class Voice {
 				}
 				catch (IOException e) {
 					//You'll need to add proper error handling here
+					Toast toast = Toast.makeText(mContext, "Error", Toast.LENGTH_SHORT);
+                                        toast.show();
 				}
 				parseSuccessful = true;
 			}

@@ -96,6 +96,7 @@ public class TTSDemo extends ListActivity implements OnClickListener, OnKeyListe
 				builder.setMessage("Adding voice");
 				mVoices.add(vox);
 				mDebugText = vox.getDebugText();
+				builder.setMessage("Got debug data");
 
 			}
 		}
@@ -182,7 +183,7 @@ public class TTSDemo extends ListActivity implements OnClickListener, OnKeyListe
 		mRateSpinner.setSelection(2);
 
 		mUserText.setOnClickListener(this);
-		// mSendButton.setOnClickListener(this);
+		mSendButton.setOnClickListener(this);
 		mUserText.setOnKeyListener(this);
 	}
 
@@ -197,8 +198,10 @@ public class TTSDemo extends ListActivity implements OnClickListener, OnKeyListe
 		mAdapter.add(text);
 		mUserText.setText(null);
         	AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                mDebugText = "Helo";
 		builder.setMessage(mDebugText);
-		// sayText(mDebugText);
+ 
+		sayText(mDebugText);
 	}
 
 	private void sayText(String text) {
@@ -207,13 +210,14 @@ public class TTSDemo extends ListActivity implements OnClickListener, OnKeyListe
 		if (currentVoiceID != mSelectedVoice) {
 			mSelectedVoice = currentVoiceID;
 			Voice v = mVoices.get(currentVoiceID);
+			mDebugText = v.getDebugText();
 			mTts.setLanguage(v.getLocale());
 		}
 
 		int currentRate = mRateSpinner.getSelectedItemPosition();
 		mTts.setSpeechRate((float)(currentRate + 1)/3);
 
-		mTts.speak(text, TextToSpeech.QUEUE_FLUSH, null);
+		mTts.speak(mDebugText, TextToSpeech.QUEUE_FLUSH, null);
 	}
 
 	public boolean onKey(View v, int keyCode, KeyEvent event) {
