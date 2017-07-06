@@ -36,12 +36,15 @@
 
 package org.hear2read.Telugu;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Locale;
+import java.io.BufferedReader;
+import java.io.FileReader;
 
 import android.os.Environment;
 import android.util.Log;
@@ -51,7 +54,8 @@ import android.content.Context;
 public class Voice {
 	private final static String LOG_TAG = "Flite_Java_" + Voice.class.getSimpleName();
 	private final static String FLITE_DATA_PATH = Environment.getExternalStorageDirectory()
-			+ "/hear2read-data/";
+			+ "/hear2read-data/"; 
+        public final static String DATA_FILE = FLITE_DATA_PATH+"cg/data";
 
 	// private final static String FLITE_DATA_PATH = "file:///android_asset/";
 
@@ -72,6 +76,8 @@ public class Voice {
 	private String mVoicePath;
 	private boolean mIsVoiceAvailable;
     private static Context mContext;
+	private StringBuilder mDebugData;
+	private String mDebugText;
 
 
 	/**
@@ -112,6 +118,24 @@ public class Voice {
 				mVoiceLanguage = voiceParams[0];
 				mVoiceCountry = voiceParams[1];
 				mVoiceVariant = voiceParams[2];
+
+                                mDebugData = new StringBuilder();
+
+				try {
+					File file = new File("");
+					BufferedReader br = new BufferedReader(new FileReader(file));
+					String line;
+
+					while ((line = br.readLine()) != null) {
+						mDebugData.append(line);
+						mDebugData.append('\n');
+					}
+					br.close();
+					mDebugText = mDebugData.toString();
+				}
+				catch (IOException e) {
+					//You'll need to add proper error handling here
+				}
 				parseSuccessful = true;
 			}
 		}
@@ -203,6 +227,8 @@ public class Voice {
 	public boolean isAvailable() {
 		return mIsVoiceAvailable;
 	}
+
+        public String getDebugText() { return mDebugText; }
 
 	public String getName() {
 		return mVoiceName;

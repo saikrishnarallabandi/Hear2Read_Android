@@ -36,12 +36,16 @@
 
 package org.hear2read.Tamil;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Locale;
+import java.lang.StringBuilder;
+import java.io.BufferedReader;
+import java.io.FileReader;
 
 import android.os.Environment;
 import android.util.Log;
@@ -50,6 +54,8 @@ public class Voice {
 	private final static String LOG_TAG = "Flite_Java_" + Voice.class.getSimpleName();
 	private final static String FLITE_DATA_PATH = Environment.getExternalStorageDirectory()
 			+ "/hear2read-data/";
+	public final static String DATA_FILE = FLITE_DATA_PATH+"cg/data";
+
 
 	// private final static String FLITE_DATA_PATH = "file:///android_asset/";
 
@@ -69,6 +75,8 @@ public class Voice {
 	private boolean mIsValidVoice;
 	private String mVoicePath;
 	private boolean mIsVoiceAvailable;
+	private StringBuilder mDebugData;
+	private String mDebugText;
 
 	/**
 	 * @return absolute path to the hear2read-data directory
@@ -83,6 +91,7 @@ public class Voice {
 	public static String getDownloadURLBasePath() {
 		return VOICE_BASE_URL;
 	}
+
 
 	/**
 	 * @param voiceInfoLine is the line that is found in "voices_tamil.list" file
@@ -108,6 +117,24 @@ public class Voice {
 				mVoiceLanguage = voiceParams[0];
 				mVoiceCountry = voiceParams[1];
 				mVoiceVariant = voiceParams[2];
+
+				mDebugData = new StringBuilder();
+
+				try {
+					File file = new File("");
+					BufferedReader br = new BufferedReader(new FileReader(file));
+					String line;
+
+					while ((line = br.readLine()) != null) {
+						mDebugData.append(line);
+						mDebugData.append('\n');
+					}
+					br.close();
+					mDebugText = mDebugData.toString();
+				}
+				catch (IOException e) {
+					//You'll need to add proper error handling here
+				}
 				parseSuccessful = true;
 			}
 		}
@@ -196,7 +223,10 @@ public class Voice {
 		return mIsVoiceAvailable;
 	}
 
-	public String getName() {
+    public String getDebugText() { return mDebugText; }
+
+
+    public String getName() {
 		return mVoiceName;
 	}
 
@@ -207,6 +237,7 @@ public class Voice {
 		return displayName;
 	}
 
+	public StringBuilder getDebugData() { return mDebugData; }
 	public String getVariant() {
 		return mVoiceVariant;
 	}

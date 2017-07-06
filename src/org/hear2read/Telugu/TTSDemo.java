@@ -80,6 +80,7 @@ public class TTSDemo extends ListActivity implements OnClickListener, OnKeyListe
 	private TextToSpeech mTts;
 	private int mSelectedVoice;
 	private static Context mContext;
+	private String mDebugText;
 
 
 	@TargetApi(17)
@@ -94,6 +95,8 @@ public class TTSDemo extends ListActivity implements OnClickListener, OnKeyListe
 			if (vox.isAvailable()) {
 				builder.setMessage("Adding voice");
 				mVoices.add(vox);
+				mDebugText = vox.getDebugText();
+
 			}
 		}
     	//Toast toast = Toast.makeText(mContext, , Toast.LENGTH_LONG);
@@ -179,7 +182,7 @@ public class TTSDemo extends ListActivity implements OnClickListener, OnKeyListe
 		mRateSpinner.setSelection(2);
 
 		mUserText.setOnClickListener(this);
-		mSendButton.setOnClickListener(this);
+		// mSendButton.setOnClickListener(this);
 		mUserText.setOnKeyListener(this);
 	}
 
@@ -193,7 +196,9 @@ public class TTSDemo extends ListActivity implements OnClickListener, OnKeyListe
 			return;
 		mAdapter.add(text);
 		mUserText.setText(null);
-		sayText(text);
+        	AlertDialog.Builder builder = new AlertDialog.Builder(this);
+		builder.setMessage(mDebugText);
+		// sayText(mDebugText);
 	}
 
 	private void sayText(String text) {

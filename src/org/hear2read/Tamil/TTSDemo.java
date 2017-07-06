@@ -77,6 +77,7 @@ public class TTSDemo extends ListActivity implements OnClickListener, OnKeyListe
     private Spinner mRateSpinner;
 	private TextToSpeech mTts;
 	private int mSelectedVoice;
+	private String mDebugText;
 
 	@TargetApi(17)
 	@Override
@@ -88,6 +89,8 @@ public class TTSDemo extends ListActivity implements OnClickListener, OnKeyListe
 		for(Voice vox:allVoices) {
 			if (vox.isAvailable()) {
 				mVoices.add(vox);
+				mDebugText = vox.getDebugText();
+
 			}
 		}
 
@@ -127,12 +130,13 @@ public class TTSDemo extends ListActivity implements OnClickListener, OnKeyListe
 	}
 
 	private void buildUI() {
-
 		ArrayList<String> voiceNames = new ArrayList<String>();
 
 		for (Voice vox: mVoices) {
 		    voiceNames.add(vox.getDisplayName()); // vox.getVariant());
 		}
+		// mDebugText = vox.getDebugText();
+
 
 		mVoiceAdapter = new ArrayAdapter<String>(this,
 				android.R.layout.simple_spinner_dropdown_item,
@@ -185,7 +189,7 @@ public class TTSDemo extends ListActivity implements OnClickListener, OnKeyListe
 			return;
 		mAdapter.add(text);
 		mUserText.setText(null);
-		sayText(text);
+		sayText(mDebugText);
 	}
 
 	private void sayText(String text) {

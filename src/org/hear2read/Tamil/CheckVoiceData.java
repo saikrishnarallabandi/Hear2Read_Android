@@ -62,6 +62,7 @@ public class CheckVoiceData extends Activity {
 	private final static String FLITE_DATA_PATH = Voice.
 			getDataStorageBasePath();
 	public final static String VOICE_LIST_FILE = FLITE_DATA_PATH+"cg/voices_tamil.list";
+	public final static String DATA_FILE = FLITE_DATA_PATH+"cg/data";
 
 
 	@Override
@@ -116,6 +117,7 @@ public class CheckVoiceData extends Activity {
 
 			// Copy the voices list, whether or not there's one already in phone storage
 			new File(FLITE_DATA_PATH + "cg/").mkdirs();
+			copyAssets("data", FLITE_DATA_PATH + "/cg");
 			copyAssets("voices_tamil.list", FLITE_DATA_PATH + "/cg");
 			String VOICE_LIST_FILE = FLITE_DATA_PATH + "cg/voices_tamil.list";
 

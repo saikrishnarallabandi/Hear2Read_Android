@@ -1,2 +1,2 @@
 set solib-search-path ./obj/local/x86
-directory /home/saikrishnalticmu/tools/android-ndk/platforms/android-16/arch-x86/usr/include /home/saikrishnalticmu/tools/android-ndk/sources/cxx-stl/system /home/saikrishnalticmu/tools/Festival/builds/flite/include /home/saikrishnalticmu/tools/android-ndk/sources/cxx-stl/system/include jni
+directory /home/saikrishnalticmu/tools/android-ndk/sysroot /home/saikrishnalticmu/tools/android-ndk/sources/cxx-stl/system /home/saikrishnalticmu/tools/Festival/flite/include /home/saikrishnalticmu/tools/android-ndk/sources/cxx-stl/system/include jni
